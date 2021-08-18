@@ -1,1 +1,2 @@
-import "./immutable.js";
+import "./immutable";
+import "./calculator";
