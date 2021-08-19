@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <form data-js="form" method="post">
+        <label for="name">Usuário</label>
+        <input type="text" id="name" data-js="name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="password">Senha:</label>
+        <input type="password" id="password" />
+        <!-- <label for="textarea">Textarea</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea> -->
+
+        <label for="lang">
+          <input
+            type="checkbox"
+            name="lang"
+            value="java"
+            data-js="checkboxLang"
+          />
+          Java
+        </label>
+        <label for="lang">
+          <input
+            type="checkbox"
+            name="lang"
+            value="js"
+            data-js="checkboxLang"
+          />
+          JS
+        </label>
+        <label for="lang">
+          <input
+            type="checkbox"
+            name="lang"
+            value="ts"
+            data-js="checkboxLang"
+          />
+          TS
+        </label>
+        <br />
+        <label for="gender">
+          <input type="radio" name="gender" value="m" data-js="radioGender" />
+          Masculino
+        </label>
+        <label for="gender">
+          <input type="radio" name="gender" value="f" data-js="radioGender" />
+          Feminino
+        </label>
+        <label for="gender">
+          <input type="radio" name="gender" value="x" data-js="radioGender" />
+          Prefiro não responder.
+        </label>
+        <br />
+        <select name="" id="lang-select" multiple data-select="lang-select">
+          <option value="ts">ts</option>
+          <option value="js">js</option>
+          <option value="java">java</option>
+        </select>
+        <!-- ########### -->
+        <select name="" id="gender-select" multiple data-select="gender-select">
+          <option value="f">feminino</option>
+          <option value="m">masculino</option>
+          <option value="x">prefiro não dizer</option>
+        </select>
+        <br />
+        <button type="submit" data-js="button">Enviar</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

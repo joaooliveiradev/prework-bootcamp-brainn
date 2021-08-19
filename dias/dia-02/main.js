@@ -1,17 +1,27 @@
-import "./style.css";
+//Tipos Primitivos
+//string
+//number
+//boolean
+//null
+//undefined
+//symbol
+//bigint
 
-const obj = { title: "Hello World", description: "some Desc" };
+console.log("Primitivo: ", 1n === 1n);
 
-const render = ({ title, description }) => {
-  document.querySelector("#app").innerHTML = `
-  <h1>${title}</h1>
-  ${description ? `<p>${description}</p>` : ""}
-`;
-};
+//Tipos Objetos
+//array
+//objetos
+//functions
+//regexp
+//date
 
-document.querySelector('[data-js="link"]').addEventListener("click", (e) => {
-  e.preventDefault();
-  render({ title: "Hello World" });
-});
+const memoria = [[]];
 
-render(obj);
+const someArr = [];
+const someArr2 = someArr;
+
+someArr2[0] = [10];
+
+console.log("Arr1", someArr);
+console.log("Arr2", someArr2);
