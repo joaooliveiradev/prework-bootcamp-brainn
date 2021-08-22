@@ -1,8 +1,28 @@
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+label[for="select"]{
+  display: block;
+  margin: 10px 0px;
+  font-size: 24px;
+}
+[data-js="form"] #select {
+  width: 155px;
+  height: 140px;
+  border: 1px solid #777;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #2c3e50;
+}
+.container {
+  width: 700px;
+  display: flex;
+  margin: 20px auto;
 }
