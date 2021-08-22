@@ -5,16 +5,56 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dia 3</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <script type="module" src="/src/main.js"></script>
     <form data-js="form">
       <label for="name">
-        Digite seu nome: 
+        Digite seu nome:
         <input type="text" id="name" data-js="inputName" />
       </label>
     </form>
-    
+    <!-- Form Cars -->
+
+    <div class="carsContainer">
+      <form action="" data-js="formCars">
+        <div>
+          <label for="imagem"> Digite a URL de uma imagem </label>
+          <input type="url" id="imagem" name="imagem" />
+        </div>
+        <div>
+          <label for="marca-modelo"> Digite a Marca / Modelo </label>
+          <input type="text" id="marca-modelo" name="marca-modelo" />
+        </div>
+        <div>
+          <label for="ano">Digite o ano</label>
+          <input type="number" id="ano" name="ano" />
+        </div>
+        <div>
+          <label for="placa"> Digite a placa </label>
+          <input type="text" id="placa" name="placa" />
+        </div>
+        <div>
+          <label for="cor"> Selecione uma cor </label>
+          <input type="color" id="cor" name="cor" />
+        </div>
+
+        <button type="submit" data-js="button">Enviar</button>
+      </form>
+
+      <table border="1" data-js="table">
+        <thead>
+          <tr>
+            <th>Imagem</th>
+            <th>Marca / Modelo</th>
+            <th>Ano</th>
+            <th>Placa</th>
+            <th>Cor</th>
+          </tr>
+        </thead>
+        <tbody data-js="tbody"></tbody>
+      </table>
+    </div>
   </body>
 </html>

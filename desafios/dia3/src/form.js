@@ -28,6 +28,7 @@ select.setAttribute('id', "select");
 form.appendChild(select);
 
 
+
 const insertColorsInSelect = (arrColors) => {
   arrColors.forEach((color) => {
     const option = document.createElement('option');
@@ -41,8 +42,8 @@ const insertColorsInSelect = (arrColors) => {
 insertColorsInSelect(colors);
 //Div Container
 const divContainer = document.createElement('div');
-divContainer.classList.add('container')
-body.appendChild(divContainer);
+divContainer.classList.add('container');
+form.appendChild(divContainer);
 
 const handleOption = (selectElement) => {
   selectElement.addEventListener('change', (e) => {
@@ -57,5 +58,8 @@ const handleOption = (selectElement) => {
     })
   })
 }
-handleOption(select)
+handleOption(select);
+
+
+
 
